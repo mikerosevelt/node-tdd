@@ -34,3 +34,11 @@ describe('Delete a User', () => {
 		expect(response.status).toBe(404);
 	});
 });
+
+describe('update a User', () => {
+	it('Call update a user endpoint', async () => {
+		const response = await request(app).put('/api/v1/users/18');
+
+		expect(response.status).toBe(200);
+	});
+});

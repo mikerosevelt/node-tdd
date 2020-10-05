@@ -21,6 +21,13 @@ exports.createUser = asyncHandler(async (req, res, next) => {
 	res.status(201).json({ success: true, data: user });
 });
 
+// @desc 		Update a user
+// @route		PUT /api/v1/users/:id
+// @access
+exports.updateUser = asyncHandler(async (req, res, next) => {
+	res.status(200).json({ success: true, data: '' });
+});
+
 // @desc    Delete a User
 // @route   DELETE /api/v1/users/:id
 // @access
